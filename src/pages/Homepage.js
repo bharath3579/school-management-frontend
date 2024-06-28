@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Container, Grid, Box, Button } from '@mui/material';
+import { Container, Grid, Box, Button, Hidden } from '@mui/material';
 import styled from 'styled-components';
 import Students from "../assets/students.svg";
 import { LightPurpleButton } from '../components/buttonStyles';
@@ -34,7 +34,7 @@ const Homepage = () => {
                             </StyledLink>
                             <StyledLink to="/chooseasguest">
                                 <Button variant="outlined" fullWidth
-                                    sx={{ mt: 2, mb: 3, color: "#7f56da", borderColor: "#7f56da" }}
+                                    sx={{ mt: 2, mb: 3, color: "#7f56da", borderColor: "#7f56da", display : 'none' }}
                                 >
                                     Login as Guest
                                 </Button>
